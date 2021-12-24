@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
-
-mongoose.connect("mongodb://localhost:27017/blogDB");
+//mongodb://localhost:27017/blogDB
+mongoose.connect("mongodb+srv://admin-bill:harbey1994@cluster0.ea0lo.mongodb.net/blogdb?retryWrites=true&w=majority");
 
 const blogSchema = mongoose.Schema({
   postTitle: { type: String, required: [true, "postTitle can not be Null"] },
