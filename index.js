@@ -69,5 +69,5 @@ app.get('/contact', (req, res) => {res.render('contact', {contactContent})})
 
 
 
-app.listen(process.env.port || 3001, 
-_ => console.log('server running on port 3000'))
+app.listen(process.env.PORT || 3001, 
+_ => console.log('server running on port 3001'))
